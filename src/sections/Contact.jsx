@@ -19,9 +19,11 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // For now, just log the data
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! I will get back to you soon.');
+    const subject = `Portfolio Message from ${formData.name}`;
+    const body = `Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
+    
+    window.location.href = `mailto:${personalData.contact.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
     setFormData({ name: '', email: '', message: '' });
   };
 
