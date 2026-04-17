@@ -14,21 +14,21 @@ const Projects = () => {
   });
 
   return (
-    <section id="projects" className="py-20 bg-gray-800">
+    <section id="projects" className="py-12 md:py-20 bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
             Projects
           </h2>
-          <p className="text-gray-400 text-lg">Showcase of my work and achievements</p>
+          <p className="text-gray-400 text-base md:text-lg">Showcase of my work and achievements</p>
         </motion.div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {sortedProjects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -36,7 +36,7 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-gray-900/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700 hover:border-gray-600 transition-all duration-300 hover:shadow-lg hover:shadow-gray-700/25 hover:-translate-y-2"
+              className="bg-gray-900/50 backdrop-blur-sm rounded-lg p-5 md:p-6 border border-gray-700 hover:border-gray-600 transition-all duration-300 hover:shadow-lg hover:shadow-gray-700/25 hover:-translate-y-2"
             >
               <div className="flex flex-wrap gap-2 mb-3">
                 {project.tags.map((tag) => (

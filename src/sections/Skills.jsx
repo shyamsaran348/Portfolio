@@ -44,19 +44,19 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-gray-800">
+    <section id="skills" className="py-12 md:py-20 bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
             Skills
           </h2>
-          <p className="text-gray-400 text-lg">Technologies and tools I work with</p>
+          <p className="text-gray-400 text-base md:text-lg">Technologies and tools I work with</p>
         </motion.div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (

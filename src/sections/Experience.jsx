@@ -20,8 +20,8 @@ const Experience = () => {
           <p className="text-gray-400 text-lg">My professional journey</p>
         </motion.div>
         <div className="relative">
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-400 to-purple-500"></div>
-          <div className="space-y-12">
+          <div className="absolute left-4 md:left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-400 to-purple-500"></div>
+          <div className="space-y-8 md:space-y-12">
             {personalData.experience.map((exp, index) => (
               <motion.div
                 key={index}
@@ -29,18 +29,18 @@ const Experience = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
                 viewport={{ once: true }}
-                className="relative flex items-start gap-8"
+                className="relative flex items-start gap-4 md:gap-8"
               >
-                <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
-                  <Briefcase className="w-8 h-8 text-white" />
+                <div className="flex-shrink-0 w-10 md:w-16 h-10 md:h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg z-10">
+                  <Briefcase className="w-5 md:w-8 h-5 md:h-8 text-white" />
                 </div>
-                <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700 flex-1">
-                  <h3 className="text-2xl font-semibold text-white mb-2">{exp.title}</h3>
-                  <p className="text-blue-400 font-medium mb-2">{exp.company}</p>
-                  <p className="text-gray-400 mb-4">{exp.period}</p>
+                <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-5 md:p-6 border border-gray-700 flex-1">
+                  <h3 className="text-xl md:text-2xl font-semibold text-white mb-1 md:mb-2">{exp.title}</h3>
+                  <p className="text-blue-400 font-medium mb-1 md:mb-2 text-sm md:text-base">{exp.company}</p>
+                  <p className="text-gray-400 mb-4 text-xs md:text-sm italic">{exp.period}</p>
                   <ul className="space-y-2">
                     {exp.description.map((item, i) => (
-                      <li key={i} className="text-gray-300 flex items-start gap-2">
+                      <li key={i} className="text-gray-300 text-sm md:text-base flex items-start gap-2">
                         <div className="w-1.5 h-1.5 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
                         {item}
                       </li>
