@@ -160,7 +160,7 @@ export const personalData = {
       impact: 'Achieved 97.47% monument identity accuracy and 98.73% architectural style accuracy. Integrated robust image decoding to bypass JPEG corruption.',
       tags: ['AI', 'Computer Vision', 'Deep Learning'],
       github: 'https://github.com/shyamsaran348',
-      demo: 'https://ijisae.org/'
+      demo: null
     }
   ],
   publications: [
@@ -173,16 +173,6 @@ export const personalData = {
       link: 'https://ieeexplore.ieee.org/abstract/document/11505180',
       authors: 'S Krithikha Sanju, R Santhoshkumar, and P Shyam Saran',
       description: 'A proposed framework combining LLM-based data augmentation with multi-model evaluation to classify Reddit rule violations. Synthetic data generated with structured prompts increases the diversity of the training data. Stacking models (CatBoost) achieved 0.985 accuracy, and the transformer models achieved an AUC over 0.994.'
-    },
-    {
-      title: 'Explainable and Robust Heritage Intelligence Framework (ERHIF): A Multi-Task Deep Learning Approach for Hierarchical Classification of Indian Monuments',
-      journal: 'International Journal of Intelligent Systems and Applications in Engineering (IJISAE)',
-      publisher: 'IJISAE',
-      year: '2024',
-      date: 'December 2024',
-      link: 'https://ijisae.org/',
-      authors: 'P. Shyam Saran, Krithikha Sanju Saravanan, R. Santhoshkumar, et al.',
-      description: 'A novel multi-task deep learning architecture designed for simultaneous monument identification and architectural style classification. Implemented a resilient OpenCV-based decoding pipeline to bypass header corruption, achieving 97.47% monument identity accuracy and 98.73% architectural style accuracy with DenseNet201, verified via Grad-CAM XAI overlays.'
     },
     {
       title: 'A comprehensive review of deep learning techniques for object detection and image enhancement in marine vision systems',
