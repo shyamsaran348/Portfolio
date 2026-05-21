@@ -94,13 +94,13 @@ export const personalData = {
     },
     {
       title: 'Reddit Rule Violation Detection',
-      problem: 'Detecting rule violations on Reddit',
-      solution: 'Used transformer models and ensemble techniques',
-      tech: ['Python', 'Transformers', 'Ensemble Learning'],
-      impact: 'Improved AUC through feature engineering and stacking',
+      problem: 'Classifying multi-label rule violations on Reddit with limited labeled data and high class imbalance.',
+      solution: 'Developed a novel framework leveraging LLM-assisted data augmentation for synthetic data generation and a high-performance stacking classifier.',
+      tech: ['Python', 'Transformers', 'CatBoost', 'Ensemble Stacking', 'LLM Augmentation'],
+      impact: 'Achieved 0.985 stacking accuracy and >0.994 ROC-AUC on real test data. Research published in IEEE ICDSAAI 2026.',
       tags: ['ML', 'NLP', 'AI'],
       github: 'https://github.com/shyamsaran348',
-      demo: null
+      demo: 'https://ieeexplore.ieee.org/abstract/document/11505180'
     },
     {
       title: 'Faculty-Driven Project Management System',
@@ -151,9 +151,39 @@ export const personalData = {
       tags: ['Cybersecurity', 'Deep Learning', 'Full Stack'],
       github: 'https://github.com/shyamsaran348/Neutron-Sentinel',
       demo: null
+    },
+    {
+      title: 'Explainable and Robust Heritage Intelligence Framework (ERHIF)',
+      problem: 'Conventional deep learning models fail to learn hierarchical architectural style relationships and act as black boxes for archaeologists.',
+      solution: 'Developed a Multi-Task Dual-Head Architecture utilizing DenseNet201 to classify both monument identity (23 classes) and style (5 classes) simultaneously, with Grad-CAM XAI explainability.',
+      tech: ['PyTorch', 'OpenCV', 'DenseNet201', 'Grad-CAM XAI', 'Multi-Task Learning'],
+      impact: 'Achieved 97.47% monument identity accuracy and 98.73% architectural style accuracy. Integrated robust image decoding to bypass JPEG corruption.',
+      tags: ['AI', 'Computer Vision', 'Deep Learning'],
+      github: 'https://github.com/shyamsaran348',
+      demo: 'https://ijisae.org/'
     }
   ],
   publications: [
+    {
+      title: 'Reddit Rule-Violation Classification Using LLM-Assisted Data Augmentation and Multi-Model Evaluation',
+      journal: '2026 International Conference on Data Science, Agents and Artificial Intelligence (ICDSAAI)',
+      publisher: 'IEEE',
+      year: '2026',
+      date: 'May 11, 2026',
+      link: 'https://ieeexplore.ieee.org/abstract/document/11505180',
+      authors: 'S Krithikha Sanju, R Santhoshkumar, and P Shyam Saran',
+      description: 'A proposed framework combining LLM-based data augmentation with multi-model evaluation to classify Reddit rule violations. Synthetic data generated with structured prompts increases the diversity of the training data. Stacking models (CatBoost) achieved 0.985 accuracy, and the transformer models achieved an AUC over 0.994.'
+    },
+    {
+      title: 'Explainable and Robust Heritage Intelligence Framework (ERHIF): A Multi-Task Deep Learning Approach for Hierarchical Classification of Indian Monuments',
+      journal: 'International Journal of Intelligent Systems and Applications in Engineering (IJISAE)',
+      publisher: 'IJISAE',
+      year: '2024',
+      date: 'December 2024',
+      link: 'https://ijisae.org/',
+      authors: 'P. Shyam Saran, Krithikha Sanju Saravanan, R. Santhoshkumar, et al.',
+      description: 'A novel multi-task deep learning architecture designed for simultaneous monument identification and architectural style classification. Implemented a resilient OpenCV-based decoding pipeline to bypass header corruption, achieving 97.47% monument identity accuracy and 98.73% architectural style accuracy with DenseNet201, verified via Grad-CAM XAI overlays.'
+    },
     {
       title: 'A comprehensive review of deep learning techniques for object detection and image enhancement in marine vision systems',
       journal: 'Marine Systems & Ocean Technology',
@@ -162,7 +192,7 @@ export const personalData = {
       date: 'April 14, 2026',
       link: 'https://link.springer.com/article/10.1007/s40868-026-00223-1',
       authors: 'S. Mohanavalli, Krithikha Sanju Saravanan, R. Santhoshkumar, and P. Shyam Saran',
-      description: 'A comprehensive evaluation of Convolutional Neural Networks (CNNs), Transformers, and hybrid architectures for marine object detection and underwater image enhancement.'
+      description: 'A comprehensive review of 70 peer-reviewed papers (2015–2025) evaluating CNNs, transformer-based models, and hybrid architectures for underwater object detection and image enhancement, outlining future pathways for edge deployment and self-supervised marine vision systems.'
     }
   ],
   services: [
