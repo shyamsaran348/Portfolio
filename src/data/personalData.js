@@ -183,6 +183,16 @@ export const personalData = {
       link: 'https://link.springer.com/article/10.1007/s40868-026-00223-1',
       authors: 'S. Mohanavalli, Krithikha Sanju Saravanan, R. Santhoshkumar, and P. Shyam Saran',
       description: 'A comprehensive review of 70 peer-reviewed papers (2015–2025) evaluating CNNs, transformer-based models, and hybrid architectures for underwater object detection and image enhancement, outlining future pathways for edge deployment and self-supervised marine vision systems.'
+    },
+    {
+      title: 'Explainable and Robust Heritage Intelligence Framework (ERHIF): A Multi-Task Deep Learning Approach for Hierarchical Classification of Indian Monuments',
+      journal: 'International Journal of Advanced Science and Engineering (IJASE)',
+      publisher: 'Mahendra Publications',
+      year: '2026',
+      date: 'June 29, 2026',
+      link: 'https://doi.org/10.29294/IJASE.12.4.2026.6492-6509',
+      authors: 'Krithikha Sanju Saravanan, S. Baghavathi Priya, S. Kalavathi, P. Shyam Saran, Sanjana Suriyanarayanan',
+      description: 'Developed and validated ERHIF using a dataset of 12,000+ images covering 23 monument categories. The DenseNet201 model achieved 97.47% monument identification accuracy and 98.73% style classification accuracy with Grad-CAM visualizations.'
     }
   ],
   services: [
