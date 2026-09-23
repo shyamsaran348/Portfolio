@@ -81,7 +81,7 @@ const Hero = () => {
               Contact Me
             </a>
             <a
-              href="/resume.pdf"
+              href="/nov.pdf"
               download
               className="px-8 py-3 border border-gray-600 rounded-lg font-semibold hover:border-purple-400 hover:text-purple-400 transition-all duration-300 flex items-center justify-center gap-2"
             >
