@@ -37,7 +37,20 @@ const Experience = () => {
                 <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-5 md:p-6 border border-gray-700 flex-1">
                   <h3 className="text-xl md:text-2xl font-semibold text-white mb-1 md:mb-2">{exp.title}</h3>
                   <p className="text-blue-400 font-medium mb-1 md:mb-2 text-sm md:text-base">{exp.company}</p>
-                  <p className="text-gray-400 mb-4 text-xs md:text-sm italic">{exp.period}</p>
+                  <div className="flex flex-wrap items-center gap-2 mb-3">
+                    <p className="text-gray-400 text-xs md:text-sm italic">{exp.period}</p>
+                    {exp.type && (
+                      <span className={`px-2 py-0.5 rounded-full text-[10px] md:text-xs font-semibold uppercase tracking-wider ${
+                        exp.type === 'Part-Time'
+                          ? 'bg-amber-500/20 text-amber-300'
+                          : exp.type === 'Internship'
+                          ? 'bg-green-500/20 text-green-300'
+                          : 'bg-purple-500/20 text-purple-300'
+                      }`}>
+                        {exp.type}
+                      </span>
+                    )}
+                  </div>
                   <ul className="space-y-2">
                     {exp.description.map((item, i) => (
                       <li key={i} className="text-gray-300 text-sm md:text-base flex items-start gap-2">

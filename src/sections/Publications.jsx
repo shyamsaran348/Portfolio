@@ -61,10 +61,23 @@ const Publications = () => {
                     {pub.description}
                   </p>
 
-                  <div className="flex items-center gap-4">
+                  <div className="flex flex-col gap-1.5">
                     <span className="text-xs md:text-sm font-medium text-gray-500">
-                      Journal: <span className="text-blue-300">{pub.journal}</span>
+                      {pub.journal ? 'Conference/Journal' : 'Published in'}: <span className="text-blue-300">{pub.journal}</span>
                     </span>
+                    {pub.venue && (
+                      <span className="text-xs text-gray-500">Venue: <span className="text-gray-400">{pub.venue}</span></span>
+                    )}
+                    {pub.doi && (
+                      <a
+                        href={pub.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-purple-400 hover:text-purple-300 transition-colors font-mono"
+                      >
+                        DOI: {pub.doi}
+                      </a>
+                    )}
                   </div>
                 </div>
 

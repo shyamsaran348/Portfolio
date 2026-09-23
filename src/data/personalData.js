@@ -13,8 +13,31 @@ export const personalData = {
   },
   experience: [
     {
+      title: 'Junior AI Analyst',
+      company: 'A2000 Solutions',
+      type: 'Part-Time',
+      period: 'Jun 2026 – Present',
+      description: [
+        'Engineered and fine-tuned AI assistant pipelines by creating synthetic JSONL training datasets and structured prompt templates to significantly improve response quality and task accuracy.',
+        'Built a complete Learning Management System (LMS) using Flask and PostgreSQL with hierarchical Role-Based Access Control (RBAC) for students, instructors, and administrators.',
+        'Implemented secure JWT authentication, detailed audit logs, and scalable RESTful APIs for user management, assignments, and file upload workflows.'
+      ]
+    },
+    {
+      title: 'Software Development Intern',
+      company: 'Highways Department, Government of Tamil Nadu',
+      type: 'Internship',
+      period: 'May – Jun 2026',
+      description: [
+        'Developed a full-stack portal using React, FastAPI, and PostgreSQL to streamline highway tender workflows and administrative processes for a state government department.',
+        'Implemented secure JWT authentication with hierarchical Role-Based Access Control (RBAC) and detailed audit logging for multi-level approval workflows.',
+        'Delivered a production-grade government software solution improving operational efficiency across administrative workflows in the Highways Department.'
+      ]
+    },
+    {
       title: 'Freelance Web Developer',
       company: 'New India Electricals',
+      type: 'Freelance',
       period: '2025 – Present',
       description: [
         'Designed and delivered a production-grade corporate website for an industrial automation client, translating business requirements into a scalable web solution.',
@@ -25,6 +48,7 @@ export const personalData = {
     {
       title: 'Web Development Intern',
       company: 'A2000 Solutions',
+      type: 'Internship',
       period: 'Jun – Jul 2025',
       description: [
         'Developed a full-stack Learning Management System (LMS) using Python (Flask) and SQLAlchemy.',
@@ -35,6 +59,7 @@ export const personalData = {
     {
       title: 'Web Development Intern',
       company: 'Infolynix',
+      type: 'Internship',
       period: 'Jun 2025',
       description: [
         'Built responsive front-end components using HTML, CSS, and JavaScript.',
@@ -165,12 +190,36 @@ export const personalData = {
   ],
   publications: [
     {
+      title: 'A Safety-Certified Framework for Maternal Triage: Integrating Conformal Prediction and Cost-Sensitive Objective Optimization',
+      journal: '2026 7th International Conference On Computational Vision and Bio Inspired Computing (ICCVBIC)',
+      publisher: 'IEEE',
+      year: '2026',
+      date: 'August 6, 2026',
+      link: 'https://ieeexplore.ieee.org/document/11688559',
+      doi: '10.1109/ICCVBIC71195.2026.11688559',
+      authors: 'Kalaichelvi Nallusamy, Krithikha Sanju S, Shyam Saran P, Santhoshkumar R',
+      description: 'A safety-certified solution for maternal triage leveraging calibrated stacking ensembles (CatBoost + LightGBM) augmented with cross-conformal prediction. The framework defers 21.67% of uncertain cases for expert review, achieving 91.82% accuracy on accepted cases and eliminating catastrophic false negatives for high-risk obstetric emergencies among 100 clinically-sampled patients.',
+      venue: 'Lalitpur, Nepal'
+    },
+    {
+      title: 'Explainable and Robust Heritage Intelligence Framework (ERHIF): A Multi-Task Deep Learning Approach for Hierarchical Classification of Indian Monuments',
+      journal: 'International Journal of Advanced Science and Engineering (IJASE)',
+      publisher: 'Mahendra Publications',
+      year: '2026',
+      date: 'June 29, 2026',
+      link: 'https://doi.org/10.29294/IJASE.12.4.2026.6492-6509',
+      doi: '10.29294/IJASE.12.4.2026.6492-6509',
+      authors: 'Krithikha Sanju Saravanan, S. Baghavathi Priya, S. Kalavathi, P. Shyam Saran, Sanjana Suriyanarayanan',
+      description: 'Developed and validated ERHIF using a dataset of 12,000+ images covering 23 monument categories hierarchically mapped into five architectural families (Indo-Islamic, Dravidian, Colonial, Ancient, Regional). The DenseNet201 model achieved 97.47% monument identification accuracy and 98.73% style classification accuracy with Grad-CAM XAI visualizations.'
+    },
+    {
       title: 'Reddit Rule-Violation Classification Using LLM-Assisted Data Augmentation and Multi-Model Evaluation',
       journal: '2026 International Conference on Data Science, Agents and Artificial Intelligence (ICDSAAI)',
       publisher: 'IEEE',
       year: '2026',
       date: 'May 11, 2026',
       link: 'https://ieeexplore.ieee.org/abstract/document/11505180',
+      doi: '10.1109/ICDSAAI69492.2026.11505180',
       authors: 'S Krithikha Sanju, R Santhoshkumar, and P Shyam Saran',
       description: 'A proposed framework combining LLM-based data augmentation with multi-model evaluation to classify Reddit rule violations. Synthetic data generated with structured prompts increases the diversity of the training data. Stacking models (CatBoost) achieved 0.985 accuracy, and the transformer models achieved an AUC over 0.994.'
     },
@@ -183,16 +232,6 @@ export const personalData = {
       link: 'https://link.springer.com/article/10.1007/s40868-026-00223-1',
       authors: 'S. Mohanavalli, Krithikha Sanju Saravanan, R. Santhoshkumar, and P. Shyam Saran',
       description: 'A comprehensive review of 70 peer-reviewed papers (2015–2025) evaluating CNNs, transformer-based models, and hybrid architectures for underwater object detection and image enhancement, outlining future pathways for edge deployment and self-supervised marine vision systems.'
-    },
-    {
-      title: 'Explainable and Robust Heritage Intelligence Framework (ERHIF): A Multi-Task Deep Learning Approach for Hierarchical Classification of Indian Monuments',
-      journal: 'International Journal of Advanced Science and Engineering (IJASE)',
-      publisher: 'Mahendra Publications',
-      year: '2026',
-      date: 'June 29, 2026',
-      link: 'https://doi.org/10.29294/IJASE.12.4.2026.6492-6509',
-      authors: 'Krithikha Sanju Saravanan, S. Baghavathi Priya, S. Kalavathi, P. Shyam Saran, Sanjana Suriyanarayanan',
-      description: 'Developed and validated ERHIF using a dataset of 12,000+ images covering 23 monument categories. The DenseNet201 model achieved 97.47% monument identification accuracy and 98.73% style classification accuracy with Grad-CAM visualizations.'
     }
   ],
   services: [
